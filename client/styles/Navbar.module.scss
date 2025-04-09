@@ -1,0 +1,48 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    //justify-content: space-evenly;
+    /* Распределяем пункты по всей ширине */
+    align-items: center;
+    height: 60px;
+    width: auto;
+}
+
+.navigationPanel{
+    margin-left: auto;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    display: flex;
+    /* Делаем пункты в одну строку */
+    flex-direction: row;
+    list-style-type: none;
+    /* Убираем маркеры */
+    padding-left: 0;
+    /* Убираем стандартный отступ у списка */
+    margin: 0;
+    /* Убираем стандартную маржу у списка */
+}
+
+.nav li {
+    margin-right: 20px;
+    /* Можно задать небольшой отступ между пунктами */
+}
+
+.nav a {
+    text-decoration: none;
+    /* Убираем подчеркивание у ссылок */
+    color: #393a38
+}
+
+/* Цвет текста */
+
+.logo {
+    margin-left: 0px;
+    object-fit: cover;
+    margin: 0px;
+    padding: 0;
+}
