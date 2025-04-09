@@ -1,0 +1,93 @@
+  /* styles.css */
+
+  * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+  }
+
+  html,
+  body {
+        height: 100%;
+        /* Устанавливаем высоту html и body равной высоте окна браузера */
+        font-family: Arial, sans-serif;
+  }
+
+  /* Новый контейнер для всей страницы */
+  .container {
+        display: flex;
+        /* Включаем Flexbox */
+        flex-direction: column;
+        /* Размещаем элементы вертикально */
+        min-height: 100vh;
+        /* Устанавливаем минимальную высоту контейнера равной высоте окна браузера */
+  }
+
+  header {
+        background-color: #83c05a;
+        /* Акцентный цвет: Ярко-желтый */
+        color: #393a38;
+        /* Темно-серый текст на желтом фоне */
+        padding: 10px;
+        text-align: center;
+  }
+
+  main {
+        flex: 1;
+        /* Основное содержимое занимает оставшееся пространство */
+        padding: 20px;
+        background-color: #ffffff;
+        /* Второстепенный цвет: Светло-серый */
+        color: #393a38;
+        /* Темно-серый текст на светло-сером фоне */
+  }
+
+  footer {
+        background-color: #83c05a;
+        /* Акцентный цвет: Ярко-желтый */
+        color: #393a38;
+        /* Темно-серый текст на желтом фоне */
+        padding: 10px;
+        text-align: center;
+  }
+
+  /* Дополнительные стили для кнопок и активных ссылок */
+  button {
+        background-color: #ffffff;
+        /* Ярко-желтая кнопка */
+        color: #212121;
+        /* Темно-серый текст на кнопке */
+        border: 1px solid #83c05a;
+        /* Темно-желтая граница */
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+        margin: 5px;
+  }
+
+  button:hover {
+        background-color: #83c05a;
+        /* Темно-желтый hover эффект */
+        color: #FFFFFF;
+        /* Белый текст при наведении */
+  }
+
+  .active-link {
+        color: #66a143;
+        /* Ярко-желтая активная ссылка */
+  }
+
+  .text-center {
+        text-align: center;
+  }
+
+  .Toastify__toast--success {
+        background-color: #28a745 !important;
+        color: white;
+  }
+
+  .Toastify__toast--error {
+        background-color: #dc3545 !important;
+        color: white;
+  }

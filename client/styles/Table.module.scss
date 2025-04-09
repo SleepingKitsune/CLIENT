@@ -1,0 +1,63 @@
+/* Общая таблица */
+
+.container {
+  display: flex;
+  /* Включаем Flexbox */
+  flex-direction: column;
+  /* Размещаем элементы вертикально */
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.table {
+
+    width: 75%;
+    border-collapse: separate; /* Создаем отдельные границы для ячеек */
+    border-spacing: 0;         /* Убираем лишние отступы между границами */
+    margin: 15px;            /* Центрирование таблицы по горизонтали */
+    border: 1px solid #83c05a; /* Рамка зеленого цвета */
+  }
+  
+  /* Заголовки таблицы */
+  .table caption {
+    font-size: auto;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #393a38; /* Темно-серый цвет текста */
+  }
+  
+  /* Заголовки столбцов */
+  .table th {
+    background-color: #83c05a; /* Зеленый цвет фона */
+    color: white;               /* Белый текст */
+    padding: 10px;              /* Хороший внутренний отступ */
+    border: 1px solid #83c05a;  /* Зеленая рамка */
+    vertical-align: middle;      /* Вертикальное выравнивание по центру */
+    text-align: center;           /* Левосторонний текст */
+  }
+  
+  /* Обычные ячейки таблицы */
+  .table td {
+    margin: 50px;
+    padding: 5px;              /* Хороший внутренний отступ */
+    border: 1px solid #83c05a;  /* Зеленая рамка */
+    vertical-align: auto;         /* Верхнее выравнивание текста */
+    text-align: left;            /* Левосторонний текст */
+  }
+  
+  /* Изображения в таблице */
+  .table img {
+    max-width: 75px;            /* Ограничиваем ширину изображения */
+    height: auto;                /* Поддерживаем оригинальные пропорции */
+    display: block;              /* Блоковое отображение */
+    margin: 0 auto;              /* Горизонтальное центрирование */
+  }
+  
+  /* Центрирование текста в ячейках */
+  .table td > p {
+    margin: 0;                  /* Убираем лишние отступы */
+    line-height: 1.25em;         /* Более удобная межстрочная высота */
+  }
+  
